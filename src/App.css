@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --pink-color: #ff6363;
+  --light-pink: #ffc8c8d4;
+  --background-pink: #fff1f1;
+  --logo-color: #ff6363;
+  --btn-color: #ff6363;
+}
