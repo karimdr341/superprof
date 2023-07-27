@@ -1,0 +1,305 @@
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
+    height: 100vh;
+    margin-top: 7rem;
+}
+
+.heading {
+    font-size: 3.7rem;
+    font-family: "custom_font_bold";
+}
+
+.quote-1 {
+    font-size: 23px;
+    padding: 16px 0;
+}
+
+.quote-2 {
+    font-size: 23px;
+    padding: 16px 0;
+}
+
+.quote-2 span {
+    color: var(--btn-hover);
+}
+
+/* find teacher section */
+.course-finder * {
+    cursor: pointer;
+}
+
+.course-finder {
+    z-index: 5;
+    width: 32rem;
+    background-color: white;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: revert;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 19px;
+    padding: 5px 15px;
+    box-shadow: 3px 4px 9px 2px var(--light-pink);
+}
+
+.course-finder button:last-child {
+    display: none;
+}
+
+.profiles:nth-child(1) {
+    background-image: url(../assets/images/prof-maths.jpg);
+}
+
+.profiles:nth-child(2) {
+    background-image: url(../assets/images/prof-yoga.jpg);
+}
+
+.profiles:nth-child(3) {
+    background-image: url(../assets/images/prof-hindi.jpg);
+}
+
+.profiles:nth-child(4) {
+    background-image: url(../assets/images/prof-singing.jpg);
+}
+
+/* nav_course_finder */
+
+.nav_course_finder {
+    position: fixed;
+    top: 11px;
+    left: 11rem;
+    width: 18rem;
+    height: 3.5rem;
+    z-index: 12;
+    background-color: rgb(245 245 245);
+    /* height: 4.5rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 5px 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.nav_course_finder button {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.nav_course_finder * {
+    cursor: pointer;
+}
+
+.nav_course_finder button::before {
+    border-radius: 50%;
+}
+
+.nav_course_finder:hover {
+    border: 1px solid rgb(128 128 128 / 46%);
+    transition: 0.2s;
+}
+
+.nav_course_finder .book-svg {
+    /* outline: 1px solid black; */
+    margin: 0;
+}
+
+.nav_course_finder label::before {
+    display: none;
+}
+
+.nav_course_finder label {
+    margin: 0;
+}
+
+.book-svg {
+    position: relative;
+    margin-left: 44px;
+}
+
+.book-svg label::before {
+    content: "";
+    background-image: url(../assets/svg/book-new-on.svg);
+    height: 2rem;
+    width: 1.4rem;
+    position: absolute;
+    z-index: 10;
+    /* background-color: red; */
+    top: -6px;
+    left: -45px;
+}
+
+.teacher-finder {
+    width: 10rem;
+    height: 90%;
+    background: var(--logo-color);
+    /*font-weight: bold;*/
+    color: white;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    border-radius: 32px;
+}
+
+.teacher-finder::before {
+    content: "";
+    background-color: var(--btn-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.teacher-finder span {
+    z-index: 5;
+}
+
+.teacher-finder:hover:before {
+    width: 105%;
+    height: 105%;
+    transition: 0.2s;
+}
+
+.nav-teacher-finder {
+    width: 10rem;
+    height: 90%;
+    color: white;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-teacher-finder .finder-quote {
+    font-size: 14px;
+}
+
+.nav-teacher-finder::before {
+    content: "";
+    background-color: var(--btn-hover);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.nav-teacher-finder span {
+    z-index: 5;
+}
+
+.nav-teacher-finder:hover:before {
+    width: 105%;
+    height: 105%;
+    transition: 0.2s;
+}
+
+/* profiles */
+.hero-profiles {
+    display: flex;
+    flex-direction: row;
+    /* align-items: ; */
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+}
+
+.profiles {
+    width: 9rem;
+    height: 37rem;
+    border-radius: 65px;
+    position: relative;
+}
+
+/* .profiles:nth-child(1) {
+    background-image: url(../images/prof-maths.jpg);
+}
+
+.profiles:nth-child(2) {
+    background-image: url(../images/prof-yoga.jpg);
+}
+
+.profiles:nth-child(3) {
+    background-image: url(../images/prof-hindi.jpg);
+}
+
+.profiles:nth-child(4) {
+    background-image: url(../images/prof-singing.jpg);
+} */
+
+.profiles:nth-child(odd) {
+    top: 0;
+}
+
+.profiles:nth-child(even) {
+    bottom: -107px;
+}
+
+.profs {
+    position: absolute;
+    height: 5rem;
+    width: 8rem;
+    background-color: white;
+    top: 68%;
+    left: 10px;
+    border-radius: 28px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profs::before {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: white;
+    top: -16px;
+    left: 23px;
+}
+
+.prof-name {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.subject-name {
+    font-size: 11px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
+    color: black;
+}
+
+.rating p:last-child {
+    color: gray;
+}

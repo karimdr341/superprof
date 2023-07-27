@@ -1,10 +1,11 @@
-import React from 'react'
-
-export const Hero = () => {
+import React from 'react';
+// import "../css/Hero.css";
+import '../css/Hero.css';
+const Hero = () => {
     return (
         <section className="hero">
             <div className="hero-left">
-                <h1 className="heading">Find the<br/>
+                <h1 className="heading">Find the<br />
                     perfect teacher</h1>
                 <p className="quote-1">Online or face-to-face,</p>
                 <p className="quote-2">Choose from <span>24 million teachers</span></p>
@@ -12,7 +13,7 @@ export const Hero = () => {
                     <div className="book-svg">
                         <label htmlFor="finder-quote" className="finder-quote">What do you want to learn?</label>
                     </div>
-                    <a className="teacher-finder">
+                    <a href='/' className="teacher-finder">
                         <span>Find a teacher</span>
                     </a>
                     <button className="nav-teacher-finder">
@@ -24,7 +25,7 @@ export const Hero = () => {
 
             </div>
             <div className="hero-profiles">
-                <div className="profiles" style="--prof-img:../../images/prof-maths.jpg;">
+                <div className="profiles" style={{ "--prof-img": "../../images/prof-maths.jpg" }}>
                     <span className="profs">
                         <p className="prof-name">Avinash</p>
                         <p className="subject-name">Math Teacher</p>
@@ -37,7 +38,7 @@ export const Hero = () => {
                         </div>
                     </span>
                 </div>
-                <div className="profiles" style="--prof-img:../../images/prof-yoga.jpg;"> <span className="profs">
+                <div className="profiles" style={{ "--prof-img": "../../images/prof-yoga.jpg" }}> <span className="profs">
                     <p className="prof-name">Manisah</p>
                     <p className="subject-name">Yoga Teacher</p>
 
@@ -48,7 +49,7 @@ export const Hero = () => {
 
                     </div>
                 </span></div>
-                <div className="profiles" style="--prof-img:../../images/prof-hindi.jpg;"> <span className="profs">
+                <div className="profiles" style={{ "--prof-img": "../../images/prof-hindi.jpg" }}> <span className="profs">
                     <p className="prof-name">Karuna</p>
                     <p className="subject-name">Hindi Teacher</p>
 
@@ -59,7 +60,7 @@ export const Hero = () => {
 
                     </div>
                 </span></div>
-                <div className="profiles" style="--prof-img:../../images/prof-singing.jpg;"> <span className="profs">
+                <div className="profiles" style={{ "--prof-img": "../../images/prof-singing.jpg" }}> <span className="profs">
                     <p className="prof-name">Payel</p>
                     <p className="subject-name">Singing Teacher</p>
 
@@ -74,3 +75,5 @@ export const Hero = () => {
         </section>
     )
 }
+
+export default Hero;
