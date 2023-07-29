@@ -1,6 +1,6 @@
 import React from 'react'
-
-export const Harmony = () => {
+import "../css/Harmony.css"
+const  Harmony = () => {
     return (
         <section class="harmony">
             <div class="harmony-body">
@@ -14,7 +14,6 @@ export const Harmony = () => {
                     <p class="harmony-quote">"Superprof has helped me perfect my skills, invest in my future, and build
                         confidence in myself."</p>
                     <div class="st-details">
-
                         <p class="st-name">Nina</p>
                         <p class="st-course-details">1st-year College student</p>
                     </div>
@@ -25,3 +24,4 @@ export const Harmony = () => {
         </section>
     )
 }
+export default Harmony;

@@ -1,0 +1,54 @@
+.harmony {
+    width: 100%;
+    height: 100vh;
+  }
+  .harmony-body {
+    width: 67rem;
+    height: 19rem;
+    /* border: 2px solid red; */
+    gap: 8rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .harmony-left {
+    width: 46%;
+    height: 100%;
+    /* border: 2px solid red; */
+  }
+  .harmony-right {
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .harmony-right-heading {
+    font-size: 2.5rem;
+    /*font-weight: bold;*/
+  }
+  .st-name {
+    font-size: 1.5rem;
+    /*font-weight: bold;*/
+  }
+  .st-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .st-course-details {
+    font-weight: 700;
+  }
+  .harmony-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    overflow: hidden;
+    background-image: url(../assets/images/alchimie-prof-eleve.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+  

@@ -3,7 +3,7 @@ import "../css/Learning.css"
 import vid1 from '../assets/videos/1.mov'
 import vid2 from '../assets/videos/2.mov'
 import vid3 from '../assets/videos/3.mov'
-export const Learning = () => {
+ const Learning = () => {
     return (
         <section className="learning-section">
             <h1 className="video-sec-heading">Learning has never been this easy</h1>
@@ -43,3 +43,5 @@ export const Learning = () => {
         </section>
     )
 }
+
+export default Learning
