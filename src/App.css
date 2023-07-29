@@ -12,3 +12,6 @@
   --logo-color: #ff6363;
   --btn-color: #ff6363;
 }
+body{
+  overflow-x: hidden;
+}
