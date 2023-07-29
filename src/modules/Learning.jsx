@@ -1,5 +1,8 @@
 import React from 'react'
-
+import "../css/Learning.css"
+import vid1 from '../assets/videos/1.mov'
+import vid2 from '../assets/videos/2.mov'
+import vid3 from '../assets/videos/3.mov'
 export const Learning = () => {
     return (
         <section className="learning-section">
@@ -12,7 +15,7 @@ export const Learning = () => {
                             criteria (prices, recommendations, reviews, classNamees at home or online)</p>
                     </div>
                     <div className="card-video-sec">
-                        <video src="./videos/1.mov" className="card-video" muted autoplay loop></video>
+                        <video src={vid1} className="card-video" muted autoPlay loop></video>
                     </div>
                 </div>
                 <div className="video-sec-body-inner-card">
@@ -22,7 +25,7 @@ export const Learning = () => {
                             teacher, our team is here to help.</p>
                     </div>
                     <div className="card-video-sec">
-                        <video src="./videos/2.mov" className="card-video" muted autoplay loop></video>
+                        <video src={vid2} className="card-video" muted autoPlay loop></video>
                     </div>
                 </div>
                 <div className="video-sec-body-inner-card">
@@ -31,7 +34,7 @@ export const Learning = () => {
                         <p className="desc">Freely schedule your classNamees with your teacher from the messaging platform.</p>
                     </div>
                     <div className="card-video-sec">
-                        <video src="./videos/3.mov" className="card-video" muted autoplay loop></video>
+                        <video src={vid3} className="card-video" muted autoPlay loop></video>
                     </div>
                 </div>
             </div>
