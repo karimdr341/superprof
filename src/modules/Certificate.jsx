@@ -1,6 +1,8 @@
 import React from 'react'
-
-export const Certificate = () => {
+import '../css/Certificate.css'
+// import images from '../assets/images/'
+var images="../assets/images";
+const Certificate = () => {
     return (
         <section className="certificate-section">
 
@@ -9,7 +11,7 @@ export const Certificate = () => {
                     teachers</h1>
                 <p className="certificate-quote"><span>Over one million students</span> gave a review of</p>
                 <p className="certificate-quote"><span>5 stars</span> to their teacher!</p>
-                <a className="teacher-finder-2">
+                <a href='/' className="teacher-finder-2">
                     <span>Find a teacher</span>
                 </a>
             </div>
@@ -19,7 +21,7 @@ export const Certificate = () => {
                     <ul className="profs-card-1 prof-cards">
                         <li className="profile-card">
                             <div className="profile-header">
-                                <img src="./images/profiles/chartered-accountant-profession-having-rich-practical-experience-group-wise-final-level-have-scored-marks.jpg"
+                                <img src={`${images}/profiles/chartered-accountant-profession-having-rich-practical-experience-group-wise-final-level-have-scored-marks.jpg`}
                                     className="avater" alt="" />
                                 <div className="profile-details">
                                     <p className="prof-name">Omkar</p>
@@ -37,7 +39,7 @@ export const Certificate = () => {
                         </li>
                         <li className="profile-card">
                             <div className="profile-header">
-                                <img src="./images/profiles/train-students-effectively-you-need-polite-patient-and-understand-their-needs-make-your-students-perfect-driving.jpg"
+                                <img src={`${images}/profiles/train-students-effectively-you-need-polite-patient-and-understand-their-needs-make-your-students-perfect-driving.jpg`}
                                     className="avater" alt="" />
                                 <div className="profile-details">
                                     <p className="prof-name">Srini</p>
@@ -54,7 +56,7 @@ export const Certificate = () => {
                         </li>
                         <li className="profile-card">
                             <div className="profile-header">
-                                <img src="./images/profiles/all-dgca-cpl-subjects-will-taught-here-english-according-the-latest-dgca-syllabus-one-demo-className-available-for-free.jpg"
+                                <img src={`${images}/profiles/all-dgca-cpl-subjects-will-taught-here-english-according-the-latest-dgca-syllabus-one-demo-className-available-for-free.jpg`}
                                     className="avater" alt="" />
                                 <div className="profile-details">
                                     <p className="prof-name">Chaitanya</p>
@@ -70,7 +72,7 @@ export const Certificate = () => {
                         </li>
                         <li className="profile-card">
                             <div className="profile-header">
-                                <img src="./images/profiles/learn-drive-your-own-and-independent-your-life-nine-five-nine-zero-seven-nine-zero-six-seven-zero.jpg"
+                                <img src={`${images}/profiles/learn-drive-your-own-and-independent-your-life-nine-five-nine-zero-seven-nine-zero-six-seven-zero.jpg`}
                                     className="avater" alt="" />
                                 <div className="profile-details">
                                     <p className="prof-name">Sanjay</p>
@@ -87,7 +89,7 @@ export const Certificate = () => {
                         </li>
                         <li className="profile-card">
                             <div className="profile-header">
-                                <img src="./images/profiles/revitalize-your-body-and-mind-nurture-your-body-refresh-your-mind-and-ignite-your-spirit.jpg"
+                                <img src={`${images}/profiles/revitalize-your-body-and-mind-nurture-your-body-refresh-your-mind-and-ignite-your-spirit.jpg`}
                                     className="avater" alt="" />
                                 <div className="profile-details">
                                     <p className="prof-name">Divya</p>
@@ -105,7 +107,7 @@ export const Certificate = () => {
                         </li>
                         <li className="profile-card">
                             <div className="profile-header">
-                                <img src="./images/profiles/would-love-students-relaxed-and-stress-free.jpg" className="avater"
+                                <img src={`${images}/profiles/would-love-students-relaxed-and-stress-free.jpg`} className="avater"
                                     alt="" />
                                 <div className="profile-details">
                                     <p className="prof-name">Ananta</p>
@@ -131,3 +133,5 @@ export const Certificate = () => {
         </section >
     )
 }
+
+export default Certificate;

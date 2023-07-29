@@ -1,0 +1,171 @@
+.certificate-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    height: 100vh;
+    /* border: 2px solid red; */
+}
+
+.certificate-heading {
+    font-size: 2.7rem;
+}
+
+.certificate-quote {
+    padding: 7px;
+    font-size: 20px;
+}
+
+.certificate-quote span {
+    color: var(--btn-color);
+}
+
+.certificate-left {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    left: 5rem;
+}
+
+.teacher-finder-2 {
+    width: 10rem;
+    height: 3rem;
+    margin-left: 10px;
+    cursor: pointer;
+    /*font-weight: bold;*/
+    color: white;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.teacher-finder-2::before {
+    content: "";
+    background-color: var(--btn-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.teacher-finder-2 span {
+    z-index: 5;
+}
+
+.teacher-finder-2:hover:before {
+    width: 105%;
+    height: 105%;
+    transition: 0.2s;
+}
+
+.cards {
+    /* height: 324px; */
+    cursor: default;
+    top: 4rem;
+    /* overflow: hidden;  */
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 7rem;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.profile-card:nth-child(6) {
+    animation: fade 0.1s linear forwards;
+    opacity: 1;
+}
+
+.profile-card:nth-child(5) {
+    animation: fade 0.1s linear forwards;
+    opacity: 1;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+
+.profs-card {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    transform: rotate(-11deg);
+}
+
+.profile-card {
+    height: 18rem;
+    width: 20rem;
+    background-color: white;
+    border-radius: 25px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile-card li:nth-child(5) .reviewer {
+    color: gray !important;
+}
+
+.profile-card li:nth-child(6) .reviewer {
+    color: gray !important;
+}
+
+.prof-cards {
+    transform: rotate(-9deg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem 3rem;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    top: 9rem;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2px;
+}
+
+.profile-desc {
+    font-size: 13px;
+}
+
+.reviewer {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.avater {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+}
